@@ -1,3 +1,4 @@
+// BOTÃO MODO CLARO/MODO ESCURO
 const botaoTema = document.getElementById("botaoTema");
 
 botaoTema.addEventListener("click", () => {
