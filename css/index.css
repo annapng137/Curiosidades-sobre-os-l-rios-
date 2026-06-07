@@ -1,0 +1,305 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+h1, h2, h3 {
+  font-family: 'Dancing Script', cursive;
+}
+
+p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+body {
+  background-color: rgb(255, 210, 210);
+}
+
+/* padrão das imagens */
+img {
+  max-width: 100%;
+  height: auto;
+  border: 2px solid #333;
+  display: block;
+  margin: 0 auto;
+}
+
+button {
+  background-color: rgb(200, 29, 243);
+  transition: background 0.10s;
+}
+
+button:hover {
+  background-color: #5856e8;
+}
+
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* navbar */
+nav {
+  background: #222;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 15px;
+}
+
+nav ul li a {
+  color: aliceblue;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  color: #5856e8;
+}
+
+/* seção principal */
+#renascimento {
+  background: url('../img/lirios.webp') center/cover no-repeat;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* seções */
+section {
+  padding: 20px 20px;
+  text-align: center;
+}
+
+/*  SPOILERS (TOPICOS) */
+.topico {
+  margin: 40px 0;
+}
+
+.topico h2 {
+  font-size: 28px;
+  margin-bottom: 5px;
+}
+
+.topico p {
+  font-size: 16px;
+  color: #555555;
+}
+
+.topico::after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: #ff4d88;
+  margin: 10px auto;
+}
+
+/* ========================= */
+/*  TEXTO "O QUE SÃO LÍRIOS" */
+/* ========================= */
+
+.texto-lirio {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.texto-lirio h1 {
+  font-size: 60px;
+  color: #d63384; /* cor que combina com seu site */
+  margin: 20px 0 10px;
+}
+
+.texto-lirio p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #555555;
+  margin-bottom: 10px;
+  padding: 0 20px;
+}
+
+.texto-lirio::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 2px;
+  background: #ff4d88;
+  margin: 10px auto;
+}
+
+/* ========================= */
+
+ul {
+  display: table;
+  margin: 0 auto;
+}
+
+/* tabela */
+.lirio-table {
+  width: 90%;
+  max-width: 700px;
+  margin: 20px auto;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.lirio-table th,
+.lirio-table td {
+  border: 1px solid #333;
+  padding: 10px 12px;
+  text-align: left;
+}
+
+.lirio-table th {
+  background: hsl(343, 62%, 86%);
+}
+
+.lirio-table tr:nth-child(even) {
+  background: #ffe7ed;
+}
+
+.intro-text {
+  font-family: 'Merriweather', serif;
+}
+
+/*  CARROSSEL  */
+.carousel {
+  background: linear-gradient(135deg, #ff9eb5, #ff4d88);
+  padding: 40px;
+  border-radius: 20px;
+  margin: 10px auto;
+  max-width: 900px;
+}
+
+.carousel-inner img {
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.carousel img {
+  border: none !important;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background: none !important;
+  width: 5%;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background: none !important;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-size: 60% 60%;
+  background-color: rgba(255,255,255,0.3);
+  border-radius: 50%;
+  padding: 20px;
+}
+
+.carousel-indicators button {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+@media (max-width: 600px) {
+  .carousel-inner img {
+    max-height: 250px;
+  }
+}
+
+/*LISTA*/
+
+
+
+.lista-lirios {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.lista-lirios li {
+  background: white;
+  margin: 10px auto;
+  padding: 10px 20px;
+  max-width: 400px;
+  border-radius: 20px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  font-size: 16px;
+  transition: 0.3s;
+}
+/* LINKS DA LISTA (CLICÁVEL) */
+
+.lista-lirios a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  width: 100%;
+}
+
+/* efeito ao passar o mouse */
+.lista-lirios li:hover a {
+  color: #d63384;
+  font-weight: bold;
+
+}
+#conteudoExtra {
+  display: none;
+}
+
+#conteudoExtra.mostrar {
+  display: block;
+}
+
+/* MODO ESCURO */
+body.modo-escuro {
+    background-color: #1f1f1f;
+    color: white;
+}
+
+/* TABELA */
+body.modo-escuro table {
+    background-color: #2a2a2a;
+    color: white;
+    border-collapse: collapse;
+}
+
+body.modo-escuro th {
+    background-color: #444;
+    color: #ffffff;
+}
+
+body.modo-escuro td {
+    background-color: #333;
+    color: #ffffff;
+}
+
+body.modo-escuro td,
+body.modo-escuro th {
+    border: 1px solid #777;
+}
